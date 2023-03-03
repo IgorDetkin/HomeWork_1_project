@@ -358,6 +358,11 @@
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  flex: 1;
+  transition: all 0.2s ease-in-out;
+}
+.product__card:hover {
+  flex: 1.1;
 }
 
 .product__card-img {

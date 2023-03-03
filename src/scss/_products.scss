@@ -51,13 +51,11 @@ $green: #66C05D;
     justify-content: space-between;
     align-items: center;
     background-color: #fff;
-    // flex: 1;
-    // transition: all 0.2s ease-in-out;
-    // &:hover {
-    //     flex: 1.1;
-    // }
-
-    
+    flex: 1;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        flex: 1.1;
+    }
 }
 
 .product__card-img {
