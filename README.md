@@ -1,1 +1,1 @@
-address - https://igordetkin.github.io/webpack-check
+address - https://igordetkin.github.io/HomeWork_1_project
