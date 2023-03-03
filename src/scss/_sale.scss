@@ -1,0 +1,128 @@
+$green: #66C05D;
+
+.sale {
+    background-image: url('../../images/sale.png');
+    background-position: center;
+    background-color: $green;
+    height: 604px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sale__info {
+    width: 1110px;
+    height: 219px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sale__title {
+    margin:0;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 46px;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+}
+
+.sale__text {
+    // margin: 50px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    // letter-spacing: 0.3px;
+    color: #FFFFFF;
+    width: 308px;
+}
+
+.sale__button-more {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    width: 170px;
+    background: none;
+    padding: 12px 26px 12px 27px;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    border-radius: 40px; 
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background: #fff;
+        font-weight: 700;
+        color: $green;
+        outline: 2px solid $green;
+        font-size: 16px;
+    }   
+}
+
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    .sale {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .sale__info {
+        width: calc(100% - 13%);
+    }
+
+}
+
+@media all and (min-width: 767px) and (max-width: 1024px) {
+    .sale {
+        background-size: cover;
+        height: 404px;
+        // background-repeat: no-repeat;
+    }
+   
+    .sale__info {
+        width: calc(100% - 13%);
+    }
+
+    .sale__text {
+        // width: calc(100% - 45%);
+    }
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) { 
+    .sale {
+        background-size: cover;
+        height: 404px;
+        // background-repeat: no-repeat;
+    }
+   
+    .sale__info {
+        width: calc(100% - 13%);
+        height: 309px;
+    }
+
+    .sale__title {
+        font-size: 42px;
+        line-height: 40px;
+        letter-spacing: 0.4px;
+        color: #FFFFFF;
+        text-shadow:  5px 5px 35px rgba(0, 0, 0, 0.8);
+    }
+
+    .sale__text {
+        margin: 20px 0 30px;
+        font-size: 20px;
+        line-height: 26px;
+        color: #FFFFFF;
+        width: calc(100% - 45%);
+        text-shadow:  0px 0px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    .sale__button-more {
+        font-size: 20px;
+        background-color: $green;
+        width: 279px;
+    }
+}

@@ -1,0 +1,12 @@
+
+$font-stack: Roboto, sans-serif;
+$color-gray: #EFEFEF;
+
+.root {
+    box-sizing: border-box;
+    font-family: $font-stack;
+    background-color: $color-gray;
+    max-width: 1920px;
+    // margin: 0 auto;
+    // padding: 0 405px;
+  };
